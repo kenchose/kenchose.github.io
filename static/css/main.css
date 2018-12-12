@@ -63,6 +63,8 @@ img {
 }
 
 .hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(0, 0, 0, 0.15))), url("/static/img/backgrounds/white-notes.jpeg");
+  background: linear-gradient(white, rgba(0, 0, 0, 0.15)), url("/static/img/backgrounds/white-notes.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -335,8 +337,8 @@ ol.carousel-indicators li.active {
 }
 
 .fixed-bg-contact {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url("../../img/backgrounds/pexels-photo-326576.jpeg");
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../../img/backgrounds/pexels-photo-326576.jpeg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url("../img/backgrounds/pexels-photo-326576.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../img/backgrounds/pexels-photo-326576.jpeg");
   min-height: 600px;
   background-attachment: fixed;
   background-position: center;
