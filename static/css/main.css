@@ -35,14 +35,13 @@ img {
 
 .navbar .navbar-brand {
   font-family: 'Lobster Two', cursive;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: green;
   letter-spacing: 2px;
-  padding-bottom: 0.6em;
 }
 
-.nav-item {
-  padding-bottom: 0.8em;
+li.nav-item {
+  line-height: 2rem;
 }
 
 .nav-link {
@@ -60,6 +59,10 @@ img {
 .navbar-toggler span {
   color: green;
   border: 0;
+}
+
+ul.navbar-nav {
+  float: right;
 }
 
 .hero {
@@ -256,36 +259,11 @@ img {
   display: block;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
-  border: darkgray solid;
+  border: black;
+  border-radius: 3px;
 }
 
-.text-content {
-  position: absolute;
-  color: white;
-  text-decoration: none;
-  left: 0;
-  top: 40%;
-  right: 0;
-  bottom: 90px;
-  font-size: 1.5em;
-  text-align: center;
-  opacity: 0;
-}
-
-.text-content .fa-camera-retro {
-  -webkit-transition: 0.5s ease-out;
-  transition: 0.5s ease-out;
-  color: black;
-}
-
-.text-content .fa-camera-retro:hover {
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
-  color: red;
-}
-
-.project-showcase img,
-.text-content {
+.project-showcase img {
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
@@ -295,6 +273,7 @@ img {
   transition: 0.5s ease-in;
   -webkit-filter: brightness(70%);
           filter: brightness(70%);
+  cursor: pointer;
 }
 
 .project-showcase:hover .text-content {
@@ -303,27 +282,22 @@ img {
   opacity: 1;
 }
 
+.modal-dialog {
+  max-width: 800px !important;
+  max-height: 600px !important;
+}
+
 .close span {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   padding-right: 0.2em;
 }
 
-ol.carousel-indicators li.active {
-  background: black;
+#modal-event-title {
+  padding-left: 45%;
 }
 
-.carousel-caption {
-  background-color: gray;
-  opacity: 0.9;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50%;
-  margin-left: 10em;
-}
-
-.carousel-caption h5, .carousel-caption p {
-  color: black;
+.caption-content p, h5, h4 {
+  text-align: center;
 }
 
 .carousel-control-next {
@@ -339,7 +313,7 @@ ol.carousel-indicators li.active {
 .fixed-bg-contact {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url("../img/backgrounds/pexels-photo-326576.jpeg");
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../img/backgrounds/pexels-photo-326576.jpeg");
-  min-height: 600px;
+  height: 600px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -347,7 +321,7 @@ ol.carousel-indicators li.active {
 }
 
 .contact {
-  padding: 10vh 0;
+  padding-top: 7em;
 }
 
 .phone {
@@ -386,26 +360,19 @@ ol.carousel-indicators li.active {
 #github {
   color: red;
   opacity: 1;
-}
-
-#email {
-  color: red;
-  opacity: 1;
+  float: right;
+  letter-spacing: 15px;
 }
 
 #linkedin {
   color: red;
   opacity: 1;
-}
-
-#google {
-  color: red;
-  opacity: 1;
+  float: right;
 }
 
 .contact-content {
   text-align: left;
-  font-size: 1.8em;
+  font-size: 1.5em;
   text-shadow: 1px 0;
   letter-spacing: 3px;
   line-height: 2em;
@@ -421,36 +388,6 @@ ol.carousel-indicators li.active {
   opacity: 0.7;
 }
 
-a[data-tool-tip] {
-  position: relative;
-}
-
-a[data-tool-tip]::before {
-  content: attr(data-tool-tip);
-  display: block;
-  position: absolute;
-  background-color: green;
-  padding: 1em 1em;
-  color: white;
-  border-radius: 30px;
-  font-size: 0.8em;
-  margin-bottom: 26px;
-  left: 0;
-  white-space: nowrap;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: bottom ease-out 150ms, -webkit-transform ease-out 150ms;
-  transition: bottom ease-out 150ms, -webkit-transform ease-out 150ms;
-  transition: transform ease-out 150ms, bottom ease-out 150ms;
-  transition: transform ease-out 150ms, bottom ease-out 150ms, -webkit-transform ease-out 150ms;
-}
-
-a[data-tool-tip]:hover::before {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  bottom: 100%;
-}
-
 #form {
   background-color: #f0f0f0;
   font-family: 'Montserrat Alternates', sans-serif;
@@ -459,12 +396,6 @@ a[data-tool-tip]:hover::before {
 .error {
   list-style-type: none;
   font-size: 1.2rem;
-}
-
-#getintouch {
-  font-family: New Century Schoolbook;
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 .requirement {
@@ -503,6 +434,7 @@ input:focus {
 
 footer {
   background-color: black;
+  border-radius: 0;
 }
 
 footer p {
