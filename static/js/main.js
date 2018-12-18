@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    $("#hello-world").hide();
+    $("#hello").hide();
     $("#kenny").hide();
     $("#kenny").show(1500);
-    $("#hello-world").fadeIn(4500);
+    $("#hello").fadeIn(4500);
 
     var scrollLink = $('.scroll');
     
@@ -25,6 +25,11 @@ $(document).ready(function() {
         }
       })
     })
+
+    //Reset Carousel
+    $('.project-image').click(function() {
+      $('.carousel').carousel(0); 
+   });    
   })
   
   

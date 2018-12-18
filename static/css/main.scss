@@ -41,7 +41,6 @@ h2 {
 
 p {
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 1.2rem;
     line-height: 1.6;
 }
 
@@ -181,7 +180,7 @@ ul.navbar-nav {
         @media (max-width: 480px) {
             padding: 7vh;
         }
-        h1 {
+        h3 {
             font-family: 'Roboto Slab', serif;
             font-weight: bolder;
         }
@@ -211,13 +210,10 @@ ul.navbar-nav {
 
 .toolbox {
     // padding: 10vh 7vw;
-    h1 {
+    h3 {
         font-weight: bold;
         letter-spacing: 2px;
         text-transform: uppercase;
-    }
-    p {
-        font-size: 1.1em
     }
 }
 
@@ -265,7 +261,7 @@ ul.navbar-nav {
 
 .project-content {
     margin-bottom: 3em;
-    h1 {
+    h3 {
         text-align: center;
         font-family: 'Roboto Slab', serif;
         font-weight: bolder;
@@ -288,29 +284,6 @@ ul.navbar-nav {
     border-radius: 3px;
 }
 
-// .text-content {
-//     position: absolute;
-//     color: white;
-//     text-decoration: none;
-//     left: 0;
-//     top: 40%;
-//     right: 0;
-//     bottom: 90px;
-//     font-size: 1.5em;
-//     text-align: center;
-//     opacity: 0;
-//     .fa-camera-retro {
-//         transition: 0.5s ease-out;
-//         color:black
-//     }
-//     .fa-camera-retro:hover {
-//         transition: 0.3s ease-in;
-//         color:red;
-//     }
-// }
-
-// .project-showcase img, 
-// .text-content {
 .project-showcase img {
     -webkit-transition:  0.5s ease-out; //no crossbrowser difficulties
     -moz-transition:  0.5s ease-out;
@@ -331,11 +304,10 @@ ul.navbar-nav {
 
 //  Modal   //
  
-.modal-dialog {
-    max-width: 800px !important;
-    max-height: 600px !important;
-    
-}
+// .modal-dialog {
+//     max-width: 800px !important;
+//     max-height: 600px !important;
+// }
 
 .close {
     span {
@@ -363,7 +335,7 @@ ul.navbar-nav {
 //     }
 // }
 
-.caption-content p, h5, h4{
+.caption-content p, h5, h4 {
     text-align: center;
 }
 
@@ -439,13 +411,14 @@ ul.navbar-nav {
     color:red;
     opacity:1;
     float:right;
-    letter-spacing: 15px;
+    padding: 5px 10px 10px;
 }
 
 #linkedin {
     color:red;
     opacity:1;
     float:right;
+    padding: 5px 10px 10px;
 }
 
 .contact-content {
@@ -555,38 +528,5 @@ footer {
     p {
         color: white;
         font-size: 0.8em;
-    }
-}
-
-                                    //          THANKYOU       //
-
-
-.fixed-bg-thanks {
-    background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ), url("../../img/backgrounds/thankyou.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 50px;
-    height: 100vh;  //viewport height 1vh=1%
-}
-
-.thankyou{
-    font-size: 1.8em;
-    word-spacing: .2rem;
-    padding: 20px;
-    color:white;
-    font-family: 'Slabo 27px', serif;
-}
-.thankyou {
-    p {
-        text-align:left;
-        line-height: 2em;
-    }
-    h3 {
-        margin-bottom: 3.6em;
     }
 }
