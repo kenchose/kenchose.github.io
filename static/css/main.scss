@@ -16,7 +16,7 @@
 
 
 
-@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Montserrat+Alternates|Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Montserrat+Alternates|Roboto+Slab|Aleo:700i');
 *, *::before, *::after {
     box-sizing: border-box;
     padding: 0;
@@ -59,7 +59,8 @@ img {
     opacity: 0.95;
     background-color: rgb(32, 32, 32);
     .navbar-brand {
-        font-family: 'Lobster Two', cursive;
+        // font-family: 'Lobster Two';
+        font-family: 'Aleo';
         font-size: 1.4rem;
         color: green;    
         letter-spacing: 2px;;
