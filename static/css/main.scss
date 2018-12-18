@@ -251,16 +251,22 @@ ul.navbar-nav {
 
 
 
-.projects {
-    background-color: #fff;
-    padding-bottom: 10vh;
-    overflow-x:hidden;
+#projects {
+    // padding-bottom: 10vh;
+    overflow-x: hidden;
     @media only screen and (max-width: 768px) { 
         padding-bottom:1em;
     }
 }
 
-.project-content {
+#dashboard {
+    height: 57%;
+    @media only screen and (max-width: 1199px) and (min-width: 991px) {
+        height:53%
+    }
+}
+
+.project-content { //header of project section
     margin-bottom: 3em;
     h3 {
         text-align: center;
@@ -271,16 +277,17 @@ ul.navbar-nav {
 
 .project-showcase {
     @media only screen and (max-width: 992px) { 
-        padding-bottom: 1em;
+        padding-bottom: 5em;
     }
+    padding-bottom: 2em;
 }
 
-.project-showcase img{
+.project-image{
     width: 100%;
-    height: 85%;
+    // height: 80%;
     display: block;
-    transition: 0.5s ease-in;
-    border: black;
+    // transition: 0.5s ease-in;
+    // border: black solid;
     // border: darkgray solid;
     border-radius: 3px;
 }
@@ -292,16 +299,38 @@ ul.navbar-nav {
     transition: 0.5s ease-out;
 }
 
-.project-showcase:hover img {
+.project-image:hover  {
     transition: 0.5s ease-in;
     filter: brightness(70%);
     cursor: pointer;
+   
 }
 
-.project-showcase:hover .text-content {
-    transition: 0.5s ease-in;
-    opacity:1;
+// .project-showcase:hover  {
+//     transition: 0.5s ease-in;
+//     filter: brightness(70%);
+//     cursor: pointer;
+// }
+
+// .project-showcase:hover .text-content {
+//     transition: 0.5s ease-in;
+//     opacity:1;
+// }
+
+.project-caption {
+    background-color: #556B2F;
+    font-family: cursive;
+    @media only screen and (min-width: 576px) {
+        // margin-bottom: 5em;
+    }
+    a {
+        color:red;
+    }
 }
+//     .github-project {
+//         color: black;
+//         text-align: center;
+//     }
 
 //  Modal   //
  

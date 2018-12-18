@@ -220,15 +220,23 @@ ul.navbar-nav {
   color: black;
 }
 
-.projects {
-  background-color: #fff;
-  padding-bottom: 10vh;
+#projects {
   overflow-x: hidden;
 }
 
 @media only screen and (max-width: 768px) {
-  .projects {
+  #projects {
     padding-bottom: 1em;
+  }
+}
+
+#dashboard {
+  height: 57%;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 991px) {
+  #dashboard {
+    height: 53%;
   }
 }
 
@@ -242,19 +250,19 @@ ul.navbar-nav {
   font-weight: bolder;
 }
 
+.project-showcase {
+  padding-bottom: 2em;
+}
+
 @media only screen and (max-width: 992px) {
   .project-showcase {
-    padding-bottom: 1em;
+    padding-bottom: 5em;
   }
 }
 
-.project-showcase img {
+.project-image {
   width: 100%;
-  height: 85%;
   display: block;
-  -webkit-transition: 0.5s ease-in;
-  transition: 0.5s ease-in;
-  border: black;
   border-radius: 3px;
 }
 
@@ -263,7 +271,7 @@ ul.navbar-nav {
   transition: 0.5s ease-out;
 }
 
-.project-showcase:hover img {
+.project-image:hover {
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
   -webkit-filter: brightness(70%);
@@ -271,10 +279,13 @@ ul.navbar-nav {
   cursor: pointer;
 }
 
-.project-showcase:hover .text-content {
-  -webkit-transition: 0.5s ease-in;
-  transition: 0.5s ease-in;
-  opacity: 1;
+.project-caption {
+  background-color: #556B2F;
+  font-family: cursive;
+}
+
+.project-caption a {
+  color: red;
 }
 
 .close span {
