@@ -330,6 +330,12 @@ ul.navbar-nav {
   color: #666;
 }
 
+@media only screen and (max-width: 479px) {
+  .phone {
+    display: none !important;
+  }
+}
+
 .letsTalk {
   padding-top: 7px;
   padding-bottom: 1px;
