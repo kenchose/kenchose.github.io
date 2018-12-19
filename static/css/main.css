@@ -314,9 +314,15 @@ ul.navbar-nav {
   }
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 479px) and (min-width: 383px) {
   .contact {
     padding-top: 1em;
+  }
+}
+
+@media only screen and (max-width: 383px) {
+  .contact {
+    padding-top: 4em;
   }
 }
 
@@ -332,6 +338,12 @@ ul.navbar-nav {
 
 @media only screen and (max-width: 479px) {
   .phone {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 382px) {
+  .get-social {
     display: none !important;
   }
 }
@@ -421,6 +433,18 @@ input:focus {
   outline: none !important;
 }
 
+@media only screen and (max-width: 368px) {
+  #linkedin {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 368px) {
+  #github {
+    font-size: 2rem;
+  }
+}
+
 footer {
   background-color: black;
 }
@@ -428,5 +452,11 @@ footer {
 footer p {
   color: white;
   font-size: 0.8em;
+}
+
+@media only screen and (max-width: 368px) {
+  footer i {
+    font-size: 0.7em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
