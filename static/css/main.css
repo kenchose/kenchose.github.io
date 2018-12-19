@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster+Two|Montserrat+Alternates|Roboto+Slab|Aleo:700i");
+@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates|Roboto+Slab|Aleo:700i|Aleo|Old+Standard+TT");
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,23 +7,23 @@
 }
 
 body {
-  font-family: 'Montserrat Alternates', sans-serif;
   height: 100%;
   width: 100%;
 }
 
-h2 {
-  font-family: 'Roboto Slab', serif;
-}
-
 p {
-  font-family: 'Montserrat Alternates', sans-serif;
   line-height: 1.6;
+  font-size: 1.1em;
 }
 
 img {
   height: auto;
   max-width: 100%;
+}
+
+.section-header {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bolder;
 }
 
 .navbar {
@@ -33,7 +33,7 @@ img {
 }
 
 .navbar .navbar-brand {
-  font-family: 'Aleo';
+  font-family: 'Aleo', serif;
   font-size: 1.4rem;
   color: green;
   letter-spacing: 2px;
@@ -158,7 +158,6 @@ ul.navbar-nav {
 }
 
 .about .about-content {
-  font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
 }
 
@@ -166,11 +165,6 @@ ul.navbar-nav {
   .about .about-content {
     padding: 7vh;
   }
-}
-
-.about .about-content h3 {
-  font-family: 'Roboto Slab', serif;
-  font-weight: bolder;
 }
 
 .about .about-content p {
@@ -187,12 +181,6 @@ ul.navbar-nav {
   background: -webkit-gradient(linear, left top, left bottom, from(#c4c8c4), to(white));
   background: linear-gradient(#c4c8c4, white);
   text-align: center;
-}
-
-.toolbox h3 {
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 .skill-logo {
@@ -244,12 +232,6 @@ ul.navbar-nav {
   margin-bottom: 3em;
 }
 
-.project-content h3 {
-  text-align: center;
-  font-family: 'Roboto Slab', serif;
-  font-weight: bolder;
-}
-
 .project-showcase {
   padding-bottom: 2em;
 }
@@ -279,13 +261,12 @@ ul.navbar-nav {
   cursor: pointer;
 }
 
-.project-caption {
-  background-color: #556B2F;
-  font-family: cursive;
+.project-caption a {
+  color: black;
 }
 
-.project-caption a {
-  color: red;
+.github-project:hover {
+  color: #a80000;
 }
 
 .close span {
@@ -321,8 +302,22 @@ ul.navbar-nav {
   background-size: cover;
 }
 
-.contact {
-  padding-top: 7em;
+@media only screen and (min-width: 769px) {
+  .contact {
+    padding-top: 7em;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 479px) {
+  .contact {
+    padding-top: 3em;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .contact {
+    padding-top: 1em;
+  }
 }
 
 .phone {
@@ -373,17 +368,11 @@ ul.navbar-nav {
 }
 
 .contact-content {
-  text-align: left;
-  font-size: 1.5em;
+  font-size: 1.6em;
   text-shadow: 1px 0;
   letter-spacing: 3px;
   line-height: 2em;
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.contact-content span {
-  color: orange;
 }
 
 .fa, .fab {
@@ -392,7 +381,6 @@ ul.navbar-nav {
 
 #form {
   background-color: #f0f0f0;
-  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .error {
@@ -405,14 +393,7 @@ ul.navbar-nav {
 }
 
 .error {
-  font-family: 'Montserrat Alternates', sans-serif;
   color: red;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 input[type=number] {
