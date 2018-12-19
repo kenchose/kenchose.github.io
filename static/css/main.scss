@@ -537,27 +537,16 @@ input:focus {
                                     //          FORM            //
 
                                     //          FOOTER          //
-#linkedin {
-    @media only screen and (max-width: 368px) {
-        font-size: 2rem;
-        // padding-top: 1em;
-    }
-}
-
-#github {
-    @media only screen and (max-width: 368px) {
-        font-size: 2rem;
-        // padding-top: 1em;
-    }
-}
 
 footer {
     background-color:black;
-    p {
-        color: white;
-        font-size: 0.8em;
-    }
     i {
+        font-size: 0.8em;
+        @media only screen and (max-width: 368px) {
+            font-size: 0.7em;            
+        }
+    }
+    a {
         @media only screen and (max-width: 368px) {
             font-size: 0.7em;
         } 

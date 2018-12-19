@@ -433,29 +433,22 @@ input:focus {
   outline: none !important;
 }
 
-@media only screen and (max-width: 368px) {
-  #linkedin {
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (max-width: 368px) {
-  #github {
-    font-size: 2rem;
-  }
-}
-
 footer {
   background-color: black;
 }
 
-footer p {
-  color: white;
+footer i {
   font-size: 0.8em;
 }
 
 @media only screen and (max-width: 368px) {
   footer i {
+    font-size: 0.7em;
+  }
+}
+
+@media only screen and (max-width: 368px) {
+  footer a {
     font-size: 0.7em;
   }
 }
