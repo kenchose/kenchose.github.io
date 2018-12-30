@@ -251,9 +251,9 @@ ul.navbar-nav {
 }
 
 #dashboard {
-    height: 57%;
-    @media only screen and (max-width: 1199px) and (min-width: 991px) {
-        height:53%
+    height: 58%;
+    @media only screen and (max-width: 991px) {
+        height:78%
     }
 }
 
