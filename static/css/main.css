@@ -32,11 +32,8 @@ img {
   background-color: #202020;
 }
 
-.navbar .navbar-brand {
-  font-family: 'Aleo', serif;
-  font-size: 1.4rem;
-  color: green;
-  letter-spacing: 2px;
+.navbar #brand {
+  max-width: 40%;
 }
 
 li.nav-item {

@@ -58,18 +58,20 @@ img {
                                     //      HEADER      //
 
 
-
 .navbar {
     width: 100%;
     opacity: 0.95;
     background-color: rgb(32, 32, 32);
-    .navbar-brand {
-        // font-family: 'Lobster Two';
-        font-family: 'Aleo', serif;
-        font-size: 1.4rem;
-        color: green;    
-        letter-spacing: 2px;;
+    #brand {
+        max-width: 40%;
     }
+    // .navbar-brand {
+    //     // font-family: 'Lobster Two';
+    //     font-family: 'Aleo', serif;
+    //     font-size: 1.4rem;
+    //     color: green;    
+    //     letter-spacing: 2px;;
+    // }
 }
 // <<<<<<< HEAD
 
