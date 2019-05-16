@@ -214,6 +214,10 @@ ul.navbar-nav {
   }
 }
 
+#live_demo {
+  color: #a80000;
+}
+
 .project-content {
   margin-bottom: 3em;
 }
@@ -251,10 +255,6 @@ ul.navbar-nav {
 }
 
 .project-image:hover {
-  -webkit-transition: 0.5s ease-in;
-  transition: 0.5s ease-in;
-  -webkit-filter: brightness(70%);
-          filter: brightness(70%);
   cursor: pointer;
 }
 

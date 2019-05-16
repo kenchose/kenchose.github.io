@@ -251,6 +251,9 @@ ul.navbar-nav {
     }
 }
 
+#live_demo {
+    color:rgb(168, 0, 0);
+}
 // #dashboard {
 //     height: 58%;
 //     @media only screen and (max-width: 991px) {
@@ -289,10 +292,9 @@ ul.navbar-nav {
 }
 
 .project-image:hover  {
-    transition: 0.5s ease-in;
-    filter: brightness(70%);
+    // transition: 0.5s ease-in;
+    // filter: brightness(70%);
     cursor: pointer;
-   
 }
 
 // .project-showcase:hover  {
