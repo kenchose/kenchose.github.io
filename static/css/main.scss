@@ -17,11 +17,6 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates|Roboto+Slab|Aleo:700i|Aleo|Old+Standard+TT');
-// fonts {
-//     Montserrat+Alternates: 'Montserrat Alternates', sans-serif;
-//     Roboto+Slab: 'Roboto Slab', serif;
-//     Aleo: 'Aleo', serif;
-// }
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -63,15 +58,8 @@ img {
     opacity: 0.95;
     background-color: rgb(32, 32, 32);
     #brand {
-        max-width: 40%;
+        max-width: 25%;
     }
-    // .navbar-brand {
-    //     // font-family: 'Lobster Two';
-    //     font-family: 'Aleo', serif;
-    //     font-size: 1.4rem;
-    //     color: green;    
-    //     letter-spacing: 2px;;
-    // }
 }
 // <<<<<<< HEAD
 
@@ -254,12 +242,6 @@ ul.navbar-nav {
 #live_demo {
     color:rgb(168, 0, 0);
 }
-// #dashboard {
-//     height: 58%;
-//     @media only screen and (max-width: 991px) {
-//         height:78%
-//     }
-// }
 
 .project-content { //header of project section
     margin-bottom: 3em;
@@ -323,10 +305,6 @@ ul.navbar-nav {
 
 //  Modal   //
  
-// .modal-dialog {
-//     max-width: 800px !important;
-//     max-height: 600px !important;
-// }
 
 .close {
     span {
@@ -339,9 +317,6 @@ ul.navbar-nav {
     padding-left: 45%;
 }
 
-// ol.carousel-indicators li.active {
-//     background: black;
-// }
 
 
 .caption-content p, h5, h4 {
