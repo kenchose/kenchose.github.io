@@ -58,7 +58,8 @@ img {
     opacity: 0.95;
     background-color: rgb(32, 32, 32);
     #brand {
-        max-width: 25%;
+        max-width: 55px;
+        max-height: 55px;
     }
 }
 // <<<<<<< HEAD
@@ -411,21 +412,21 @@ ul.navbar-nav {
     color:red;
     opacity:1;
     float:right;
-    padding: 5px 10px 10px;    
+    padding: 5px 5px 10px;    
 }
 
 #github {
     color:red;
     opacity:1;
     float:right;
-    padding: 5px 10px 10px;
+    padding: 5px 5px 10px;
 }
 
 #linkedin {
     color:red;
     opacity:1;
     float:right;
-    padding: 5px 10px 10px;
+    padding: 5px 5px 10px;
 }
 
 .contact-content {
@@ -530,7 +531,7 @@ footer {
     i {
         font-size: 0.8em;
         @media only screen and (max-width: 368px) {
-            font-size: 0.7em;            
+            font-size: 0.7em;     
         }
     }
     a {
