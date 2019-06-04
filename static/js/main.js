@@ -10,7 +10,8 @@ $(document).ready(function() {
     scrollLink.click(function(e) {
       e.preventDefault();
       $('body, html').animate({ //animate is looking for a css properties
-        scrollTop: $(this.hash).offset().top - 58 //scrollTop looks at the location of the scrollbar. 
+        scrollTop: $(this.hash).offset().top - 80 //scrollTop looks at the location of the scrollbar. 
+        // scrollTop: $(this.hash).offset().top - 58 //scrollTop looks at the location of the scrollbar. 
       }, 1000 );
     });
     
