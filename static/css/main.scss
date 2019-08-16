@@ -280,16 +280,6 @@ ul.navbar-nav {
     cursor: pointer;
 }
 
-// .project-showcase:hover  {
-//     transition: 0.5s ease-in;
-//     filter: brightness(70%);
-//     cursor: pointer;
-// }
-
-// .project-showcase:hover .text-content {
-//     transition: 0.5s ease-in;
-//     opacity:1;
-// }
 
 .project-caption {
     @media only screen and (min-width: 576px) {
@@ -332,6 +322,10 @@ ul.navbar-nav {
     filter: invert(100%);
 }
 
+.tickets-p {
+    padding-top:1rem;
+    margin-bottom:0px;
+}
 
 
                                 //      PROJECTS    //

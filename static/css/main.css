@@ -244,7 +244,7 @@ ul.navbar-nav {
 
 @media only screen and (max-width: 992px) {
   .project-image {
-    width: 100%;
+    widht: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -288,6 +288,11 @@ ul.navbar-nav {
 .carousel-control-prev {
   -webkit-filter: invert(100%);
           filter: invert(100%);
+}
+
+.tickets-p {
+  padding-top: 1rem;
+  margin-bottom: 0px;
 }
 
 .fixed-bg-contact {
