@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates|Roboto+Slab|Aleo:700i|Aleo|Old+Standard+TT");
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
@@ -276,7 +278,9 @@ ul.navbar-nav {
   padding-left: 45%;
 }
 
-.caption-content p, h5, h4 {
+.caption-content p,
+h5,
+h4 {
   text-align: center;
 }
 
@@ -293,6 +297,17 @@ ul.navbar-nav {
 .tickets-p {
   padding-top: 1rem;
   margin-bottom: 0px;
+}
+
+.cartify-p {
+  padding-top: 1rem;
+  margin-bottom: 0px;
+}
+
+.responsive {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  height: 480px;
 }
 
 .fixed-bg-contact {
@@ -403,7 +418,8 @@ ul.navbar-nav {
   color: white;
 }
 
-.fa, .fab {
+.fa,
+.fab {
   opacity: 0.7;
 }
 

@@ -18,18 +18,18 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates|Roboto+Slab|Aleo:700i|Aleo|Old+Standard+TT');
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-$colors: (
-    button: rgb(168, 0, 0),
-    i: rgb(168, 0, 0)
-);
+$colors: (button: rgb(168, 0, 0),
+    i: rgb(168, 0, 0));
 
-body{
+body {
     height: 100%;
     width: 100%;
 }
@@ -37,31 +37,33 @@ body{
 
 p {
     line-height: 1.6;
-    font-size:1.1em;
+    font-size: 1.1em;
 }
 
 img {
     height: auto;
     max-width: 100%;
 }
-      
+
 .section-header {
     font-family: 'Roboto Slab', serif;
-    font-weight:bolder;
+    font-weight: bolder;
 }
-                            
-                                    //      HEADER      //
+
+//      HEADER      //
 
 
 .navbar {
     width: 100%;
     opacity: 0.95;
     background-color: rgb(32, 32, 32);
+
     #brand {
         max-width: 55px;
         max-height: 55px;
     }
 }
+
 // <<<<<<< HEAD
 
 li.nav-item {
@@ -70,74 +72,83 @@ li.nav-item {
 
 .nav-link {
     color: green;
+
     &:hover {
         color: map-get($colors, button);
     }
 }
 
 .navbar-brand:hover {
-    color:map-get($colors, button);
+    color: map-get($colors, button);
 }
 
 .navbar-toggler span {
     color: green;
-    border:0;
+    border: 0;
 }
 
 ul.navbar-nav {
     float: right;
 }
 
-                            //          HEADER          //
+//          HEADER          //
 
-                            //          HERO            //
+//          HERO            //
 
 
 
 
 .hero {
-    background: linear-gradient( white, rgba(0, 0, 0, 0.15) ), url("/static/img/backgrounds/white-notes-copy.jpeg");
+    background: linear-gradient(white, rgba(0, 0, 0, 0.15)), url("/static/img/backgrounds/white-notes-copy.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat Alternates', sans-serif;
+
     .btn-projects {
-        background-color: green;;
+        background-color: green;
+        ;
         border: transparent;
         margin-top: 1em;
         padding: 1em;
-        color:white;
+        color: white;
         font-family: 'Roboto Slab', serif;
         text-transform: uppercase;
+
         @media (max-width: 480px) {
             visibility: hidden;
         }
     }
+
     .btn:hover {
-        background-color:rgb(168, 0, 0);
+        background-color: rgb(168, 0, 0);
     }
 }
 
 .hero-content {
-    font-weight:bold;
+    font-weight: bold;
     letter-spacing: 1px;
     text-align: center;
-    .heading{
+
+    .heading {
         color: map-get($colors, button);
         font-weight: bolder;
     }
+
     h1 {
         margin: 30px 0 55px;
         font-weight: bolder;
     }
+
     h2 {
         @media (max-width:480px) {
             margin-top: 10em;
         }
+
         @media (max-width:768px) and (min-width: 480px) {
             margin-top: 6em;
         }
@@ -154,8 +165,10 @@ ul.navbar-nav {
 #about {
     background-color: rgb(196, 200, 196);
 }
+
 .about {
     padding: 10vh 7vw;
+
     img {
         object-fit: cover;
         height: 250px;
@@ -165,68 +178,75 @@ ul.navbar-nav {
         top: 50%;
         transform: translateY(-50%);
     }
+
     .pic-me {
         @media (max-width: 481px) {
             padding-bottom: 7vh;
         }
     }
+
     .about-content {
         // font-family: 'Montserrat Alternates', sans-serif;
         text-align: center;
+
         @media (max-width: 480px) {
             padding: 7vh;
         }
+
         p {
             line-height: 1.8;
             margin-top: 1em;
         }
+
         a {
             text-decoration: none;
             color: map-get($colors, button);
-        }  
-    }    
+        }
+    }
 }
 
 
-                            ////            ABOUT               /////
+////            ABOUT               /////
 
 
 
-                            ////            TOOLBOX               /////
+////            TOOLBOX               /////
 
 
 #toolbox {
-    background: linear-gradient( rgb(196, 200, 196), white );
+    background: linear-gradient(rgb(196, 200, 196), white);
     text-align: center;
 }
 
 .skill-logo {
     margin-top: 2.2rem;
+
     @media (max-width: 480px) {
         padding: 2vh 0;
-        margin-top:0;
+        margin-top: 0;
     }
+
     text-align: center;
 }
 
 .language-item {
     width: 112px;
     height: 112px;
-    border-radius:50%;
+    border-radius: 50%;
     border: darkgray 4px solid;
 }
 
 .toolbox span {
     text-shadow: 1px 0;
-    color:black;
+    color: black;
 }
 
 
 
 
-                            ////      TOLLBOX       ////
+////      TOLLBOX       ////
 
-                            ////      PROJECTS    ////
+////      PROJECTS    ////
 
 
 
@@ -235,32 +255,36 @@ ul.navbar-nav {
 #projects {
     // padding-bottom: 10vh;
     overflow-x: hidden;
-    @media only screen and (max-width: 768px) { 
-        padding-bottom:1em;
+
+    @media only screen and (max-width: 768px) {
+        padding-bottom: 1em;
     }
 }
 
 #live_demo {
-    color:rgb(168, 0, 0);
+    color: rgb(168, 0, 0);
 }
 
-.project-content { //header of project section
+.project-content {
+    //header of project section
     margin-bottom: 3em;
 }
 
 .project-showcase {
-    @media only screen and (max-width: 992px) { 
+    @media only screen and (max-width: 992px) {
         padding-bottom: 5em;
     }
+
     padding-bottom: 2em;
 }
 
-.project-image{
+.project-image {
     display: block;
     border-radius: 3px;
     min-width: 100%;
     height: auto;
     object-fit: cover;
+
     @media only screen and (max-width: 992px) {
         widht: 100%;
         object-fit: cover;
@@ -268,13 +292,13 @@ ul.navbar-nav {
 }
 
 .project-showcase img {
-    -webkit-transition:  0.5s ease-out; //no crossbrowser difficulties
-    -moz-transition:  0.5s ease-out;
-    -o-transition:  0.5s ease-out;
+    -webkit-transition: 0.5s ease-out; //no crossbrowser difficulties
+    -moz-transition: 0.5s ease-out;
+    -o-transition: 0.5s ease-out;
     transition: 0.5s ease-out;
 }
 
-.project-image:hover  {
+.project-image:hover {
     // transition: 0.5s ease-in;
     // filter: brightness(70%);
     cursor: pointer;
@@ -285,24 +309,25 @@ ul.navbar-nav {
     @media only screen and (min-width: 576px) {
         // margin-bottom: 5em;
     }
+
     a {
-        color:black;
+        color: black;
     }
 }
 
 .github-project:hover {
-    color:rgb(168, 0, 0);
+    color: rgb(168, 0, 0);
 }
 
 //  Modal   //
- 
+
 
 .close {
     span {
         font-size: 1.8rem;
         padding-right: 0.2em;
     }
-}   
+}
 
 #modal-event-title {
     padding-left: 45%;
@@ -310,33 +335,46 @@ ul.navbar-nav {
 
 
 
-.caption-content p, h5, h4 {
+.caption-content p,
+h5,
+h4 {
     text-align: center;
 }
 
-.carousel-control-next{
+.carousel-control-next {
     filter: invert(100%);
 }
 
-.carousel-control-prev{
+.carousel-control-prev {
     filter: invert(100%);
 }
 
 .tickets-p {
-    padding-top:1rem;
-    margin-bottom:0px;
+    padding-top: 1rem;
+    margin-bottom: 0px;
+}
+
+.cartify-p {
+    padding-top: 1rem;
+    margin-bottom: 0px;
+}
+
+.responsive {
+    object-fit: scale-down;
+    height: 480px;
+
 }
 
 
-                                //      PROJECTS    //
-                                
-                                //      CONTACT     //
- 
+//      PROJECTS    //
 
-                                
-    
-.fixed-bg-contact{
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../img/backgrounds/pexels-photo-326576.jpeg");
+//      CONTACT     //
+
+
+
+
+.fixed-bg-contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../img/backgrounds/pexels-photo-326576.jpeg");
     // min-height: 600px;
     height: 600px;
     background-attachment: fixed;
@@ -350,12 +388,15 @@ ul.navbar-nav {
     @media only screen and (min-width: 769px) {
         padding-top: 7em;
     }
+
     @media only screen and (max-width: 768px) and (min-width: 479px) {
         padding-top: 3em;
     }
+
     @media only screen and (max-width: 479px) and (min-width: 383px) {
         padding-top: 1em;
     }
+
     @media only screen and (max-width: 383px) {
         padding-top: 4em;
     }
@@ -369,6 +410,7 @@ ul.navbar-nav {
     background: #fff;
     border: 2px solid #666;
     color: #666;
+
     @media only screen and (max-width: 479px) {
         display: none !important;
     }
@@ -380,60 +422,65 @@ ul.navbar-nav {
     }
 }
 
-.letsTalk { //word "social"
+.letsTalk {
+    //word "social"
     padding-top: 7px;
     padding-bottom: 1px;
     padding-left: 10px;
 }
 
-#letstalk { //main heading
-    font-size:2.8rem;
-    font-weight:bold;
-    width: 100%; 
-    text-align: center; 
-    border-bottom: 5px solid black; 
+#letstalk {
+    //main heading
+    font-size: 2.8rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    border-bottom: 5px solid black;
     line-height: 0.1em;
-    margin: 2em 0 1em; 
+    margin: 2em 0 1em;
 }
-#letstalk span { //word background
-    background:#fff; 
-    text-align:center;
+
+#letstalk span {
+    //word background
+    background: #fff;
+    text-align: center;
     border-radius: 5px;
     padding-left: 10px;
 }
 
 #email {
-    color:red;
-    opacity:1;
-    float:right;
-    padding: 5px 5px 10px;    
+    color: red;
+    opacity: 1;
+    float: right;
+    padding: 5px 5px 10px;
 }
 
 #github {
-    color:red;
-    opacity:1;
-    float:right;
+    color: red;
+    opacity: 1;
+    float: right;
     padding: 5px 5px 10px;
 }
 
 #linkedin {
-    color:red;
-    opacity:1;
-    float:right;
+    color: red;
+    opacity: 1;
+    float: right;
     padding: 5px 5px 10px;
 }
 
 .contact-content {
-    font-size:1.6em;
+    font-size: 1.6em;
     text-shadow: 1px 0;
     letter-spacing: 3px;
     line-height: 2em;
-    color:white;
+    color: white;
 }
 
 
-.fa, .fab {
-    opacity:0.7;
+.fa,
+.fab {
+    opacity: 0.7;
 }
 
 // a[data-tool-tip] {
@@ -466,9 +513,9 @@ ul.navbar-nav {
 
 
 
-                                        //          CONTACT     //
+//          CONTACT     //
 
-                                        //          FORM       //
+//          FORM       //
 
 
 
@@ -481,14 +528,14 @@ ul.navbar-nav {
     list-style-type: none;
     font-size: 1.2rem;
 }
-    
+
 .requirement {
-    color:red;
+    color: red;
 }
 
 .error {
     // font-family: 'Montserrat Alternates', sans-serif;
-    color:red;
+    color: red;
 }
 
 // input[type=number]::-webkit-inner-spin-button, 
@@ -498,11 +545,12 @@ ul.navbar-nav {
 // }   //gets rid of the up/down click button
 
 input[type=number] {
-    -moz-appearance:textfield;
+    -moz-appearance: textfield;
 }
 
 .form {
-    padding:3em;
+    padding: 3em;
+
     input {
         background-color: #f0f0f0;
         border: none;
@@ -516,21 +564,24 @@ input:focus {
 }
 
 
-                                    //          FORM            //
+//          FORM            //
 
-                                    //          FOOTER          //
+//          FOOTER          //
 
 footer {
-    background-color:black;
+    background-color: black;
+
     i {
         font-size: 0.8em;
+
         @media only screen and (max-width: 368px) {
-            font-size: 0.7em;     
+            font-size: 0.7em;
         }
     }
+
     a {
         @media only screen and (max-width: 368px) {
             font-size: 0.7em;
-        } 
+        }
     }
 }
