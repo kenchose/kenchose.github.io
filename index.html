@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="static/css/main.css">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
         <link rel="apple-touch-icon" sizes="180x180" href="./pham-180x180.png">
         <link rel="icon" type="image/png" sizes="62x62" href="/pham-62x62.png">
         <link rel="icon" type='image/png' sizes='40x40' href="./pham-40-40.png">
@@ -17,7 +18,7 @@
     <body>
         <header>
             <div class="container"  id="home">
-                <nav class="navbar navbar-expand-md fixed-top">
+                <nav class="navbar navbar-expand-md fixed-top nav-scroll ">
                     <a class="navbar-brand scroll" href="#home">
                         <img id='brand' src="./pham-130x130.png" alt="brand">
                     </a>
@@ -55,7 +56,7 @@
 
         <section id="about">
             <div class="container about">
-                <div class="row">
+                <div class="row fade-in">
                     <div class="col-sm-12 col-md-7 about-content">
                         <h2 class="section-header"><u>About Me</u> <i class="fas fa-user-tie"></i></h2>
                         <p>I have been curious and interested to learn about the domain of the tech industry in software development. Not only did I want to bridge the gap of the unknown, but took initiative to be identified as a person who is part of it. Over 1000 plus hours of experience from a coding bootcamp, (<strong><a href="https://www.codingdojo.com/" target="_blank">Coding Dojo</a></strong>) I am now a full-stack developer. I'm excited to apply my new-founded coding skills (<a href="https://github.com/kenchose" target="_blank">My GitHub</a>) to my future software development career.</p>
@@ -77,17 +78,17 @@
                         <div class="col-lg-4 col-sm-12 skill-logo">
                             <img src="static/img/logos/python-copy.png" alt="python logo" class="language-item python">
                             <h4 class="font-weight-bold text-center pt-3">Python</h4>
-                            <p class="pt-4 pb-5 text-center"> Python was the first stack I adopted during my time at the Coding Dojo. From this, I was introduced to <span>object-oriented programming</span> and its concepts making your code more organized and modular. After being introduced to the architectual frameworks, I further on equiped and built my knowledge using <span>Flask and Django</span>. I was finally able to create my own applications by using <span>MySQLWorkbench</span>, writing SQL queries, and able to deploy them on <span>AWS</span> .</p>
+                            <p class="pt-4 pb-5 text-center slide-in from-left"> Python was the first stack I adopted during my time at the Coding Dojo. From this, I was introduced to <span>object-oriented programming</span> and its concepts making your code more organized and modular. After being introduced to the architectual frameworks, I further on equiped and built my knowledge using <span>Flask and Django</span>. I was finally able to create my own applications by using <span>MySQLWorkbench</span>, writing SQL queries, and able to deploy them on <span>AWS</span> .</p>
                         </div>
                         <div class="col-lg-4 col-sm-12 skill-logo">
                             <img src="static/img/logos/rails.png" alt="ruby logo" class="language-item ruby">
                             <h4 class="font-weight-bold text-center pt-3">Ruby on Rails</h4>
-                            <p class="pt-4 pb-5 text-center">After experiencing the process of learning a full stack, it quickly minimized the difficulty in learning my next stack, Ruby on Rails. I fine-tuned writing queries using <span>Active Record</span> to take care of my database and understood the advantages for building quick prototypes. In my journey using the pure object-oriented language, I learned using <span>RSpec and Capybara</span>. Lastly, I learned how to deploy my projects with <span>PostgreSQL</span> .</p> 
+                            <p class="pt-4 pb-5 text-center animate__animated fade-in">After experiencing the process of learning a full stack, it quickly minimized the difficulty in learning my next stack, Ruby on Rails. I fine-tuned writing queries using <span>Active Record</span> to take care of my database and understood the advantages for building quick prototypes. In my journey using the pure object-oriented language, I learned using <span>RSpec and Capybara</span>. Lastly, I learned how to deploy my projects with <span>PostgreSQL</span> .</p> 
                         </div>
                         <div class="col-lg-4 col-sm-12 skill-logo">
                             <img src="static/img/logos/mean.jpg" alt="mean logo" class="language-item mean">
                             <h4 class="font-weight-bold text-center pt-3">MEAN</h4>
-                            <p class="pt-4 pb-5 text-center">Finally, the last thing I learned at the Dojo was the MEAN (MongoDB, Express, Angular and Node) stack. I got the chance to experience working with the database using <span>MongoDB</span>, node framework with <span>Express</span>, javascript/typescript framework through <span>Angular</span>, and lastly with <span>Node</span>. </p>
+                            <p class="pt-4 pb-5 text-center from-right slide-in">Finally, the last thing I learned at the Dojo was the MEAN (MongoDB, Express, Angular and Node) stack. I got the chance to experience working with the database using <span>MongoDB</span>, node framework with <span>Express</span>, javascript/typescript framework through <span>Angular</span>, and lastly with <span>Node</span>. </p>
                         </div>
                     </div>
                 </div>
@@ -104,7 +105,7 @@
                 </div>
                 <div class="row">
                     <div id="project-5" class="project-showcase col-lg-6 project">
-                        <img id="cartify" class="project-image" src="static/img/projects/cartify/macbook.png" data-toggle="modal" data-target="#cartify-project" alt="cartify-project">
+                        <img id="cartify" class="project-image slide-in from-left" src="static/img/projects/cartify/macbook.png" data-toggle="modal" data-target="#cartify-project" alt="cartify-project">
                         <div class="project-caption">
                             <h2 class="text-center font-weight-bold pt-1">Cartify</h2>
                             <p class="text-center">MEAN</p>
@@ -130,7 +131,7 @@
                         </div>
                     </div>
                     <div id="project-2" class="project-showcase col-lg-6 project">
-                        <img id="belp" class="project-image" src="static/img/projects/user_review/reg-img-macbook.png" data-toggle="modal" data-target="#belp-project" alt="belp-project">
+                        <img id="belp" class="project-image slide-in from-right" src="static/img/projects/user_review/reg-img-macbook.png" data-toggle="modal" data-target="#belp-project" alt="belp-project">
                         <div class="project-caption">
                             <h2 class="text-center font-weight-bold pt-1">Belp</h2>
                             <p class="text-center">Python w/ Django</p>
@@ -140,7 +141,7 @@
                 </div>
                 <div class="row">
                     <div id="project-1" class="project-showcase col-lg-6 project">
-                        <img id="dashboard" class="project-image" src="static/img/projects/user_dashboard/admin_pro.png" data-toggle="modal" data-target="#admin-project" alt="dashboard">
+                        <img id="dashboard" class="project-image slide-in from-left" src="static/img/projects/user_dashboard/admin_pro.png" data-toggle="modal" data-target="#admin-project" alt="dashboard">
                         <div class="project-caption">
                             <h2 class="text-center font-weight-bold pt-1">Cockpit</h2>
                             <p class="text-center">Python w/ Django</p>
@@ -589,6 +590,7 @@
         </div>
         
         <script type="text/javascript" src="static/js/main.js"></script> 
+        <script type="text/javascript" src="static/js/intersection-observer.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <!--BOOTSTRAP -->  
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
     </body>

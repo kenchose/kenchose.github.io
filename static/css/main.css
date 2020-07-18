@@ -11,6 +11,7 @@
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 p {
@@ -28,15 +29,66 @@ img {
   font-weight: bolder;
 }
 
-.navbar {
-  width: 100%;
-  opacity: 0.95;
-  background-color: #202020;
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
 }
 
-.navbar #brand {
+.appear {
+  opacity: 1;
+}
+
+.from-left {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.from-right {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  -webkit-transition: opacity 250ms ease-in, -webkit-transform 800ms ease-in;
+  transition: opacity 250ms ease-in, -webkit-transform 800ms ease-in;
+  transition: opacity 250ms ease-in, transform 800ms ease-in;
+  transition: opacity 250ms ease-in, transform 800ms ease-in, -webkit-transform 800ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+.nav-scroll {
+  width: 100%;
+  background-color: transparent;
+}
+
+.nav-scroll #brand {
   max-width: 55px;
   max-height: 55px;
+  -webkit-transition: max-width .5s;
+  transition: max-width .5s;
+}
+
+.nav-scrolled {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #11151C;
+}
+
+.nav-scrolled #brand {
+  max-width: 38px;
+  max-height: 55px;
+  -webkit-transition: max-width .5s;
+  transition: max-width .5s;
 }
 
 li.nav-item {

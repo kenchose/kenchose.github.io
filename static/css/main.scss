@@ -32,6 +32,7 @@ $colors: (button: rgb(168, 0, 0),
 body {
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -50,17 +51,62 @@ img {
     font-weight: bolder;
 }
 
+.fade-in {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+
+.appear {
+    opacity: 1;
+}
+
+
+.from-left {
+    transform: translateX(-50%)
+}
+
+.from-right {
+    transform: translateX(50%)
+}
+
+.from-left,
+.from-right {
+    transition:
+        opacity 250ms ease-in,
+        transform 800ms ease-in;
+    opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+    transform: translateX(0);
+    opacity: 1;
+}
+
 //      HEADER      //
 
 
-.navbar {
+.nav-scroll {
     width: 100%;
-    opacity: 0.95;
-    background-color: rgb(32, 32, 32);
+    background-color: transparent;
 
     #brand {
         max-width: 55px;
         max-height: 55px;
+        transition: max-width .5s;
+    }
+}
+
+.nav-scrolled {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #11151C;
+
+    #brand {
+        max-width: 38px;
+        max-height: 55px;
+        transition: max-width .5s;
     }
 }
 
