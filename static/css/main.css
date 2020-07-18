@@ -91,6 +91,10 @@ img {
   transition: max-width .5s;
 }
 
+#kenny {
+  font-weight: bolder;
+}
+
 li.nav-item {
   line-height: 2rem;
 }

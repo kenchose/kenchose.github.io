@@ -2,7 +2,7 @@ $(document).ready(function () {
   $("#hello").hide();
   $("#kenny").hide();
   $("#kenny").show(900);
-  $("#hello").fadeIn(2500);
+  $("#hello").fadeIn(3700);
 
   var scrollLink = $('.scroll');
 
