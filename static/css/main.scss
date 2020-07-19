@@ -29,7 +29,8 @@
 $colors: (button: rgb(168, 0, 0),
     i: rgb(168, 0, 0));
 
-body {
+body,
+html {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -110,11 +111,7 @@ img {
     }
 }
 
-// <<<<<<< HEAD
-
-#kenny {
-    font-weight: bolder;
-}
+//      HEADER      //
 
 li.nav-item {
     line-height: 2rem;
@@ -144,8 +141,6 @@ ul.navbar-nav {
 //          HEADER          //
 
 //          HERO            //
-
-
 
 
 .hero {
@@ -205,6 +200,10 @@ ul.navbar-nav {
     }
 }
 
+#kenny {
+    font-weight: bolder;
+    font-size: 2.2rem;
+}
 
 //////////                                        //      HERO        //
 
