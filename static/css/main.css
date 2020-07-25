@@ -13,6 +13,7 @@ html {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 p {
@@ -139,16 +140,16 @@ ul.navbar-nav {
 .hero .btn-projects {
   background-color: green;
   border: transparent;
-  margin-top: 1em;
+  border-radius: 15px;
   padding: 1em;
   color: white;
   font-family: 'Roboto Slab', serif;
   text-transform: uppercase;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 280px) {
   .hero .btn-projects {
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -172,21 +173,13 @@ ul.navbar-nav {
   font-weight: bolder;
 }
 
-@media (max-width: 480px) {
-  .hero-content h2 {
-    margin-top: 10em;
-  }
-}
-
-@media (max-width: 768px) and (min-width: 480px) {
-  .hero-content h2 {
-    margin-top: 6em;
-  }
-}
-
 #kenny {
   font-weight: bolder;
-  font-size: 2.2rem;
+  font-size: calc(14px + 2vw);
+}
+
+#hello {
+  font-size: calc(14px + 3vw);
 }
 
 #about {
@@ -194,7 +187,7 @@ ul.navbar-nav {
 }
 
 .about {
-  padding: 10vh 7vw;
+  padding: 7vh 7vw 10vh;
 }
 
 .about img {
@@ -204,9 +197,6 @@ ul.navbar-nav {
   width: 250px;
   border-radius: 50%;
   position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 @media (max-width: 481px) {
@@ -233,6 +223,29 @@ ul.navbar-nav {
 .about .about-content a {
   text-decoration: none;
   color: #a80000;
+}
+
+.slide-up {
+  -webkit-transition: opacity 800ms ease-in, -webkit-transform 800ms ease-in;
+  transition: opacity 800ms ease-in, -webkit-transform 800ms ease-in;
+  transition: opacity 800ms ease-in, transform 800ms ease-in;
+  transition: opacity 800ms ease-in, transform 800ms ease-in, -webkit-transform 800ms ease-in;
+  opacity: 0;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
+@media (max-width: 992px) {
+  .slide-up {
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%);
+  }
+}
+
+.slide-up.appear {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 #toolbox {
@@ -371,6 +384,7 @@ h4 {
 .fixed-bg-contact {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url("../img/backgrounds/pexels-photo-326576.jpeg");
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../img/backgrounds/pexels-photo-326576.jpeg");
+  min-height: 600px;
   height: 600px;
   background-attachment: fixed;
   background-position: center;

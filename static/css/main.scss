@@ -34,6 +34,7 @@ html {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 
@@ -156,16 +157,16 @@ ul.navbar-nav {
 
     .btn-projects {
         background-color: green;
-        ;
         border: transparent;
-        margin-top: 1em;
+        border-radius: 15px;
+        // margin-top: 1em;
         padding: 1em;
         color: white;
         font-family: 'Roboto Slab', serif;
         text-transform: uppercase;
 
-        @media (max-width: 480px) {
-            visibility: hidden;
+        @media (max-width: 280px) {
+            display: none;
         }
     }
 
@@ -188,21 +189,15 @@ ul.navbar-nav {
         margin: 30px 0 55px;
         font-weight: bolder;
     }
-
-    h2 {
-        @media (max-width:480px) {
-            margin-top: 10em;
-        }
-
-        @media (max-width:768px) and (min-width: 480px) {
-            margin-top: 6em;
-        }
-    }
 }
 
 #kenny {
     font-weight: bolder;
-    font-size: 2.2rem;
+    font-size: calc(14px + 2vw);
+}
+
+#hello {
+    font-size: calc(14px + 3vw);
 }
 
 //////////                                        //      HERO        //
@@ -216,7 +211,7 @@ ul.navbar-nav {
 }
 
 .about {
-    padding: 10vh 7vw;
+    padding: 7vh 7vw 10vh;
 
     img {
         object-fit: cover;
@@ -224,8 +219,6 @@ ul.navbar-nav {
         width: 250px;
         border-radius: 50%;
         position: relative;
-        top: 50%;
-        transform: translateY(-50%);
     }
 
     .pic-me {
@@ -235,7 +228,6 @@ ul.navbar-nav {
     }
 
     .about-content {
-        // font-family: 'Montserrat Alternates', sans-serif;
         text-align: center;
 
         @media (max-width: 480px) {
@@ -254,6 +246,25 @@ ul.navbar-nav {
     }
 }
 
+
+.slide-up {
+    transition:
+        opacity 800ms ease-in,
+        transform 800ms ease-in;
+    opacity: 0;
+
+    transform: translateY(30%);
+
+    @media (max-width:992px) {
+        transform: translateY(5%);
+    }
+
+}
+
+.slide-up.appear {
+    transform: translateY(0);
+    opacity: 1;
+}
 
 ////            ABOUT               /////
 
@@ -291,14 +302,9 @@ ul.navbar-nav {
 }
 
 
-
-
 ////      TOLLBOX       ////
 
 ////      PROJECTS    ////
-
-
-
 
 
 #projects {
@@ -424,7 +430,7 @@ h4 {
 
 .fixed-bg-contact {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../img/backgrounds/pexels-photo-326576.jpeg");
-    // min-height: 600px;
+    min-height: 600px;
     height: 600px;
     background-attachment: fixed;
     background-position: center;
