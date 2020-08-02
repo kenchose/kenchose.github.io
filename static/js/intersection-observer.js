@@ -1,10 +1,11 @@
 const navbar = document.querySelector("nav");
 const hero = document.querySelector(".hero")
-const rubber = document.querySelector(".animate__animated")
-
 const rubberBand = document.querySelector(".animate__animated")
+
 const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll(".slide-in")
+
+const sections = document.querySelectorAll("section")
 
 //  HERO    //
 const heroOptions = {
@@ -17,9 +18,8 @@ const heroObserver = new IntersectionObserver((entries, heroObserver) => {
             navbar.classList.add("nav-scrolled");
             navbar.classList.remove("nav-scroll");
         } else {
+            navbar.classList.add("nav-scroll")
             navbar.classList.remove("nav-scrolled");
-            navbar.classList.add("nav-scroll");
-
         }
     });
 }, heroOptions);
@@ -30,7 +30,6 @@ heroObserver.observe(hero);
 //  ANIMATE RUBBERBAND  //
 const animateOptions = {
     threshold: .7,
-    rootMargin: "0px 0px -200px 0px"
 };
 
 const animateObserver = new IntersectionObserver((entries, animateObserver) => {
@@ -43,13 +42,12 @@ const animateObserver = new IntersectionObserver((entries, animateObserver) => {
     })
 }, animateOptions)
 
-animateObserver.observe(rubber, faders)
+animateObserver.observe(rubberBand, faders)
 //  ANIMATE RUBBERBAND  //
 
 //  APPEAR ON SCROLL    //
 const appearOptions = {
     threshold: .3,
-    rootMargin: "0px 0px -200px 0px"
 };
 
 const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
@@ -58,12 +56,13 @@ const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
             return;
         } else {
             entry.target.classList.add("appear");
+            entry.target.classList.add("active-nav-link")
             appearOnScroll.unobserve(entry.target)
         }
     })
 }, appearOptions)
 
-appearOnScroll.observe(rubber)
+appearOnScroll.observe(rubberBand)
 
 faders.forEach(fader => {
     appearOnScroll.observe(fader)
@@ -73,3 +72,37 @@ sliders.forEach(slider => {
     appearOnScroll.observe(slider)
 })
 // APPEAR ON SCROLL //
+
+// //  NAVLINK //
+
+// const navlinkOptions = {
+//     threshold: 0,
+// }
+
+// const navlinkObserver = new IntersectionObserver((entries, navlinkObserver) => {
+//     entries.forEach(entry => {
+//         if (!entry.isIntersecting) {
+//             return;
+//         } else {
+//             const activelink = entry.target.id
+//             console.log(activelink)
+//             const activeAnchor = document.querySelector("[data-page] =" + activeLink)
+//             console.log("acctive " + activeAnchor)
+//         }
+//         // if (!entry.isIntersecting) {
+//         //     activeAnchor.classList.remove("active-nav-link")
+//         // }
+//         // if (entry.isIntersecting) {
+//         //     activeAnchor.classList.toggle("active-nav-link")
+//         //     // entry.target.classList.add("active-nav-link")
+//         // }
+
+//         //     entry.target.classList.add(".active-nav-link")
+//         // activelink.classList.add(".active-nav-link");
+//         // navbar.classList.add("nav-scrolled");
+//     })
+// }, navlinkOptions)
+
+// sections.forEach(section => {
+//     navlinkObserver.observe(section);
+// })
