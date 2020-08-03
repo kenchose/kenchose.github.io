@@ -33,12 +33,12 @@
 }
 
 .slide-up {
-    transition: opacity 800ms ease-in, transform 800ms ease-in;
+    transition: opacity 800ms ease-in, transform 1s ease-in;
     opacity: 0;
 
-    transform: translateY(30%);
+    transform: translateY(45%);
 
     @media (max-width: 992px) {
-        transform: translateY(5%);
+        transform: translateY(20%);
     }
 }

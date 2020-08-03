@@ -42,19 +42,19 @@
 }
 
 .slide-up {
-  -webkit-transition: opacity 800ms ease-in, -webkit-transform 800ms ease-in;
-  transition: opacity 800ms ease-in, -webkit-transform 800ms ease-in;
-  transition: opacity 800ms ease-in, transform 800ms ease-in;
-  transition: opacity 800ms ease-in, transform 800ms ease-in, -webkit-transform 800ms ease-in;
+  -webkit-transition: opacity 800ms ease-in, -webkit-transform 1s ease-in;
+  transition: opacity 800ms ease-in, -webkit-transform 1s ease-in;
+  transition: opacity 800ms ease-in, transform 1s ease-in;
+  transition: opacity 800ms ease-in, transform 1s ease-in, -webkit-transform 1s ease-in;
   opacity: 0;
-  -webkit-transform: translateY(30%);
-          transform: translateY(30%);
+  -webkit-transform: translateY(45%);
+          transform: translateY(45%);
 }
 
 @media (max-width: 992px) {
   .slide-up {
-    -webkit-transform: translateY(5%);
-            transform: translateY(5%);
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
   }
 }
 
@@ -793,7 +793,7 @@ img {
 .section-header {
   font-family: "Roboto Slab", serif;
   font-weight: bolder;
-  color: #2b303a;
+  color: #222831;
 }
 
 .animation-text {

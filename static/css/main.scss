@@ -67,7 +67,8 @@ img {
 .section-header {
 	font-family: "Roboto Slab", serif;
 	font-weight: bolder;
-	color: #2b303a;
+	// color: #2b303a;
+	color: $primaryText;
 }
 
 .animation-text {
