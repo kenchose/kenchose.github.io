@@ -1,0 +1,39 @@
+.close {
+    span {
+        font-size: 1.8rem;
+        padding-right: 0.2em;
+    }
+}
+
+#modal-event-title {
+    padding-left: 45%;
+}
+
+.caption-content p,
+h5,
+h4 {
+    text-align: center;
+}
+
+.modal-content {
+    border-radius: 3% !important;
+}
+
+.carousel-control-icon {
+    color: #2A2B2A !important;
+}
+
+.tickets-p {
+    padding-top: 1rem;
+    margin-bottom: 0px;
+}
+
+.cartify-p {
+    padding-top: 1rem;
+    margin-bottom: 0px;
+}
+
+.responsive {
+    object-fit: scale-down;
+    height: 480px;
+}

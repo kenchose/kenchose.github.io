@@ -1,0 +1,39 @@
+#about {
+    background-color: rgb(196, 200, 196);
+}
+
+.about {
+    padding: 7vh 7vw 10vh;
+
+    img {
+        object-fit: cover;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .pic-me {
+        @media (max-width: 481px) {
+            padding-bottom: 7vh;
+        }
+    }
+
+    .about-content {
+        text-align: center;
+
+        @media (max-width: 480px) {
+            padding: 7vh;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-top: 1em;
+        }
+
+        a {
+            text-decoration: none;
+            color: $infoText;
+        }
+    }
+}

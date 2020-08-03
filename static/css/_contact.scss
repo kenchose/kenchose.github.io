@@ -1,0 +1,68 @@
+.fixed-bg-contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+        url("../img/backgrounds/pexels-photo-326576.jpeg");
+    min-height: 600px;
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.get-social {
+    padding-top: 120px;
+
+    .header-get-social {
+        @media only screen and (max-width: 262px) {
+            display: none !important;
+        }
+    }
+
+    .phone {
+        border-radius: 50%;
+        width: 75px;
+        height: 80px;
+        padding: 20px;
+        background: #fff;
+        border: 2px solid #666;
+        color: #666;
+
+        @media only screen and (max-width: 479px) {
+            display: none !important;
+        }
+    }
+
+    .letstalk {
+        font-size: calc(32px + 1vw);
+        font-weight: bold;
+        width: 100%;
+        border-bottom: 5px solid black;
+        line-height: 0.1em;
+        margin: 1.5em 0 1em;
+
+        span {
+            background: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-top: -5px;
+
+            .social-text {
+                padding-top: 7px;
+                padding-left: 10px;
+            }
+
+            .get-text {
+                padding-top: 5px;
+            }
+        }
+    }
+
+    .contact-content {
+        font-size: calc(14px + 1vw);
+        text-shadow: 1px 0;
+        letter-spacing: 3px;
+        line-height: 2em;
+        color: white;
+    }
+}

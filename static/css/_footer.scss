@@ -1,0 +1,32 @@
+footer {
+    background-color: $headerColors;
+    opacity: 0.95;
+
+    i {
+        font-size: 0.8em;
+
+        @media only screen and (max-width: 368px) {
+            font-size: 0.7em;
+        }
+    }
+
+    a {
+        @media only screen and (max-width: 368px) {
+            font-size: 0.7em;
+        }
+    }
+}
+
+#github {
+    color: $secondaryText;
+    opacity: 1;
+    float: right;
+    padding: 5px 5px 10px;
+}
+
+#linkedin {
+    color: $secondaryText;
+    opacity: 1;
+    float: right;
+    padding: 5px 5px 10px;
+}

@@ -1,0 +1,44 @@
+.fade-in {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+
+.appear {
+    opacity: 1;
+}
+
+.from-left {
+    transform: translateX(-50%);
+}
+
+.from-right {
+    transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+    transition: opacity 250ms ease-in, transform 800ms ease-in;
+    opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.slide-up.appear {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.slide-up {
+    transition: opacity 800ms ease-in, transform 800ms ease-in;
+    opacity: 0;
+
+    transform: translateY(30%);
+
+    @media (max-width: 992px) {
+        transform: translateY(5%);
+    }
+}

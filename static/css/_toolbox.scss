@@ -1,0 +1,37 @@
+#toolbox {
+    background: linear-gradient(rgb(196, 200, 196), white);
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.skill-logo {
+    margin-top: 2.2rem;
+
+    @media (max-width: 480px) {
+        padding: 2vh 0;
+        margin-top: 0;
+    }
+
+    text-align: center;
+}
+
+.language-item {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    border: darkgray 4px solid;
+}
+
+.toolbox span {
+    text-shadow: 1px 0;
+    color: black;
+
+}
+
+.skills {
+    color: $infoText !important;
+
+    .object-oriented {
+        white-space: nowrap;
+    }
+}
