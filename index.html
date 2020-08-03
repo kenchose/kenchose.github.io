@@ -16,38 +16,34 @@
         <title>Kenny Pham</title>
     </head>
     <body>
-        <header>
-            <div class="container"  id="home">
-                <nav class="navbar navbar-expand-md fixed-top nav-scroll ">
-                    <a class="navbar-brand scroll" href="#home">
-                        <img id='brand' src="./pham-130x130.png" alt="brand">
-                    </a>
-                    <button class="btn navbar-toggler" data-toggle="collapse" data-target="#navbarItems">
-                        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>                
-                    </button>                        
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarItems">
-                        <ul class="navbar-nav text-uppercase">
-                            <li class="nav-item active"><a class="nav-link d-inline scroll" href="#about" >about</a></li>                              
-                            <li class="nav-item"><a class="nav-link d-inline scroll" href="#toolbox">toolbox</a></li>
-                            <li class="nav-item"><a class="nav-link d-inline scroll" href="#projects">projects</a></li>
-                            <li class="nav-item"><a class="nav-link d-inline scroll" href="#connect">connect</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+        <header id="home">
+            <nav>
+                <a class="navbar-brand scroll" href="#home">
+                    <img id='brand' src="./pham-130x130.png" alt="brand">
+                </a>
+                <ul class="nav-links">
+                    <li><a class="scroll" data-page="about" href="#about"><i class="nav-icon fas fa-user-tie"></i>about</a></li>                              
+                    <li><a class="scroll" data-page="toolbox" href="#toolbox"><i class="nav-icon fas fa-toolbox"></i>toolbox</a></li>
+                    <li><a class="scroll" data-page="projects" href="#projects"><i class="nav-icon fas fa-code"></i>projects</a></li>
+                    <li><a class="scroll" data-page="connect" href="#connect"><i class="nav-icon fas fa-phone phone"></i>connect</a></li>
+                </ul>   
+                <div class="hamburger">
+                    <div class="hamburger-btn"></div>
+                </div>
+            </nav>
         </header>
     
         <div class="hero">
             <div class="container hero-container">
                 <div class="row">
                     <div class="col hero-content mr-4">
-                        <h2 id="kenny">My name is Kenny Pham</h2>
-                        <h1 id="hello" class="display-4 heading">I'm a Software Developer</h1>
+                        <p id="kenny">My name is Kenny Pham</p>
+                        <p id="hello" class="heading">I'm a Software Developer</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col hero-content text-center mr-4 mt-2">
-                        <a class="btn btn-sm btn-projects" href="software_dev_resume.pdf" target="_blank">Resume</i></a>                 
+                        <a class="btn btn-sm resume-btn" href="software_dev_resume.pdf" target="_blank">Resume</i></a>                 
                     </div>
                 </div>
             </div>
@@ -56,39 +52,39 @@
 
         <section id="about">
             <div class="container about">
-                <div class="row fade-in">
-                    <div class="col-sm-12 col-md-7 about-content">
+                <div class="row slide-in slide-up fade-in">
+                    <div class="col-sm-12 col-md-7 about-content section-header-name">
                         <h2 class="section-header"><u>About Me</u> <i class="fas fa-user-tie"></i></h2>
-                        <p>I have been curious and interested to learn about the domain of the tech industry in software development. Not only did I want to bridge the gap of the unknown, but took initiative to be identified as a person who is part of it. Over 1000 plus hours of experience from a coding bootcamp, (<strong><a href="https://www.codingdojo.com/" target="_blank">Coding Dojo</a></strong>) I am now a full-stack developer. I'm excited to apply my new-founded coding skills (<a href="https://github.com/kenchose" target="_blank">My GitHub</a>) to my future software development career.</p>
+                        <p>I have been curious and interested to learn about the domain of the tech industry in software development. Not only did I want to bridge the gap of the unknown, but took initiative to be identified as a person who is part of it. Over 1000 plus hours of experience from a coding bootcamp (<strong><a class="animation-text" href="https://www.codingdojo.com/" target="_blank">Coding Dojo</a></strong>), I am now a full-stack developer. I'm excited to apply my new-founded coding skills to my future software development career. And be sure to check out my <strong><a class="animation-text" href="https://github.com/kenchose" target="_blank">GitHub</a></strong>!</p>
                     </div>
-                    <div class="col-sm-12 col-md-5 text-center pic-me">
-                        <img src="/static/img/me2.png" alt="Kenny Pham">
+                    <div class="d-flex justify-content-center align-items-center col-sm-12 col-md-5 text-center pic-me">
+                        <img data-src="/static/img/me2.png" alt="Kenny Pham">
                     </div>
                 </div>
             </div>
         </section>
         
 
-        <section  id="toolbox"> 
+        <section id="toolbox"> 
             <div class="container-fluid">
                 <div class="toolbox">
                     <h2 class="section-header"><u>Technical <i class="fas fa-toolbox"></i> Toolbox</u></h2>
                     <p class="pt-2">Apart from learning the basics of web fundementals regarding HTML5, CSS3, JavaScript, and JQuery, these are the three full stacks I've learned (so far):</p>
                     <div class="row logo">
                         <div class="col-lg-4 col-sm-12 skill-logo">
-                            <img src="static/img/logos/python-copy.png" alt="python logo" class="language-item python">
+                            <img data-src="static/img/logos/python-copy.png" alt="python logo" class="language-item python">
                             <h4 class="font-weight-bold text-center pt-3">Python</h4>
-                            <p class="pt-4 pb-5 text-center slide-in from-left"> Python was the first stack I adopted during my time at the Coding Dojo. From this, I was introduced to <span>object-oriented programming</span> and its concepts making your code more organized and modular. After being introduced to the architectual frameworks, I further on equiped and built my knowledge using <span>Flask and Django</span>. I was finally able to create my own applications by using <span>MySQLWorkbench</span>, writing SQL queries, and able to deploy them on <span>AWS</span> .</p>
+                            <p class="pt-4 pb-5 text-center slide-in from-left"> Python was the first stack I adopted during my time at the Coding Dojo. From this, I was introduced to <span class="skills animation-text"> object-oriented programming</span> and its concepts making your code more organized and modular. After being introduced to the architectual frameworks, I further on equiped and built my knowledge using <span class="skills animation-text">Flask and Django</span>. I was finally able to create my own applications by using <span class="skills animation-text">MySQLWorkbench</span>, writing SQL queries, and able to deploy them on <span class="skills animation-text">AWS</span> .</p>
                         </div>
                         <div class="col-lg-4 col-sm-12 skill-logo">
-                            <img src="static/img/logos/rails.png" alt="ruby logo" class="language-item ruby">
+                            <img data-src="static/img/logos/rails.png" alt="ruby logo" class="language-item ruby">
                             <h4 class="font-weight-bold text-center pt-3">Ruby on Rails</h4>
-                            <p class="pt-4 pb-5 text-center animate__animated fade-in">After experiencing the process of learning a full stack, it quickly minimized the difficulty in learning my next stack, Ruby on Rails. I fine-tuned writing queries using <span>Active Record</span> to take care of my database and understood the advantages for building quick prototypes. In my journey using the pure object-oriented language, I learned using <span>RSpec and Capybara</span>. Lastly, I learned how to deploy my projects with <span>PostgreSQL</span> .</p> 
+                            <p class="pt-4 pb-5 text-center animate__animated fade-in">After experiencing the process of learning a full stack, it quickly minimized the difficulty in learning my next stack, Ruby on Rails. I was able to practice and fine-tuned writing queries using <span class="skills animation-text no-wrap">Active Record</span> to take care of my database and understood the advantages for building quick prototypes. In my journey using the pure object-oriented language, I learned using <span class="skills animation-text">RSpec and Capybara</span>. Lastly, I learned how to deploy my projects with <span class="skills animation-text">PostgreSQL</span> .</p> 
                         </div>
                         <div class="col-lg-4 col-sm-12 skill-logo">
-                            <img src="static/img/logos/mean.jpg" alt="mean logo" class="language-item mean">
+                            <img data-src="static/img/logos/mean.jpg" alt="mean logo" class="language-item mean">
                             <h4 class="font-weight-bold text-center pt-3">MEAN</h4>
-                            <p class="pt-4 pb-5 text-center from-right slide-in">Finally, the last thing I learned at the Dojo was the MEAN (MongoDB, Express, Angular and Node) stack. I got the chance to experience working with the database using <span>MongoDB</span>, node framework with <span>Express</span>, javascript/typescript framework through <span>Angular</span>, and lastly with <span>Node</span>. </p>
+                            <p class="pt-4 pb-5 text-center from-right slide-in">Finally, the last thing I learned at the Dojo was the MEAN (MongoDB, Express, Angular and Node) stack. I got the chance to experience working with the database using <span class="skills animation-text">MongoDB</span>, node framework with <span class="skills animation-text">Express</span>, javascript/typescript framework through <span class="skills animation-text">Angular</span>, and lastly with <span class="skills animation-text">Node</span>. </p>
                         </div>
                     </div>
                 </div>
@@ -105,7 +101,7 @@
                 </div>
                 <div class="row">
                     <div id="project-5" class="project-showcase col-lg-6 project">
-                        <img id="cartify" class="project-image slide-in from-left" src="static/img/projects/cartify/macbook.png" data-toggle="modal" data-target="#cartify-project" alt="cartify-project">
+                        <img id="cartify" class="project-image slide-in from-left" data-src="static/img/projects/cartify/macbook.png" data-toggle="modal" data-target="#cartify-project" alt="cartify-project">
                         <div class="project-caption">
                             <h2 class="text-center font-weight-bold pt-1">Cartify</h2>
                             <p class="text-center">MEAN</p>
@@ -113,7 +109,7 @@
                         </div>
                     </div>
                     <div id="project-4" class="project-showcase col-lg-6 project">
-                        <img id="tickets" class="project-image" src="static/img/projects/tickets/macbook_main.png" data-toggle="modal" data-target="#tickets-project" alt="tickets-project">
+                        <img id="tickets" class="project-image slide-in from-right" data-src="static/img/projects/tickets/macbook_main.png" data-toggle="modal" data-target="#tickets-project" alt="tickets-project">
                         <div class="project-caption">
                             <h2 class="text-center font-weight-bold pt-1">Tickets</h2>
                             <p class="text-center">MEAN</p>
@@ -123,7 +119,7 @@
                 </div>
                 <div class="row">
                     <div id="project-3" class="project-showcase col-lg-6 project">
-                        <img id="hoppier" class="project-image" src="static/img/projects/user_event/event-welcome-mac.png" data-toggle="modal" data-target="#hoppier-project" alt="hoppier-project">
+                        <img id="hoppier" class="project-image slide-in from-left" data-src="static/img/projects/user_event/event-welcome-mac.png" data-toggle="modal" data-target="#hoppier-project" alt="hoppier-project">
                         <div class="project-caption">
                             <h2 class="text-center font-weight-bold pt-1">Hoppier</h2>
                             <p class="text-center">Ruby on Rails</p>
@@ -131,7 +127,7 @@
                         </div>
                     </div>
                     <div id="project-2" class="project-showcase col-lg-6 project">
-                        <img id="belp" class="project-image slide-in from-right" src="static/img/projects/user_review/reg-img-macbook.png" data-toggle="modal" data-target="#belp-project" alt="belp-project">
+                        <img id="belp" class="project-image slide-in from-right" data-src="static/img/projects/user_review/reg-img-macbook.png" data-toggle="modal" data-target="#belp-project" alt="belp-project">
                         <div class="project-caption">
                             <h2 class="text-center font-weight-bold pt-1">Belp</h2>
                             <p class="text-center">Python w/ Django</p>
@@ -141,11 +137,10 @@
                 </div>
                 <div class="row">
                     <div id="project-1" class="project-showcase col-lg-6 project">
-                        <img id="dashboard" class="project-image slide-in from-left" src="static/img/projects/user_dashboard/admin_pro.png" data-toggle="modal" data-target="#admin-project" alt="dashboard">
+                        <img id="dashboard" class="project-image slide-in from-left" data-src="static/img/projects/user_dashboard/admin_pro.png" data-toggle="modal" data-target="#admin-project" alt="dashboard">
                         <div class="project-caption">
                             <h2 class="text-center font-weight-bold pt-1">Cockpit</h2>
                             <p class="text-center">Python w/ Django</p>
-                            <!-- <p class="text-center font-weight-bold"><a id='live_demo' href="http://54.67.33.247/" target="_blank">Live Demo</a></p> -->
                             <p class="text-center pb-1"><a href="https://github.com/kenchose/django-adminUserDashboard" target="_blank"><i class="fab fa-github fa-2x github-project"></i></a></p>
                         </div>
                     </div> 
@@ -156,14 +151,14 @@
 
         <section id="connect"> 
             <div class="fixed-bg-contact">
-                <div class="container">
-                    <div class="contact">
+                <div class="container fade-in contact">
+                    <div class="get-social">
                         <div class="text-center">
                             <i class="fas fa-phone fa-2x phone"></i>
                         </div>   
-                        <div class="row">
-                            <div class="col text-center text-uppercase get-social">
-                                <h1 id="letstalk"><span>Get <kbd class="letsTalk">social!</kbd></span></h1>
+                        <div class="row header-get-social">
+                            <div class="col text-center text-uppercase">
+                                <p class="letstalk"><span class="get-text">Get <kbd class="social-text">social!</kbd></span></p>
                             </div>
                         </div>
                         <p class="contact-content text-center">If you are looking to collaborate, want to know more about my work, or have any questions please don't hesitate! Fill out the form below and let's build something together!</p>
@@ -173,51 +168,37 @@
         </section>
 
 
-        <section id="form"> 
+        <section id="form" class="form validate"> 
             <div class="container form pt-5 pb-5 mb-lg-0">
-                <div class="row">
-                    <div class="col">
-                        <form action="https://formspree.io/kennypm42@gmail.com" method="POST" class="form">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="form-group mt-4">
-                                        <label for="name">Name</label>
-                                        <input type="text" name="name" id="last_name" class="form-control">
-                                    </div>
-                                </div>
+                <form action="https://formspree.io/kennypm42@gmail.com" method="POST" class="form">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group mt-4">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" class="form-control" required>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-12 mt-4">
-                                    <div class="form-group">
-                                        <label for="company">Company / Organization</label>
-                                        <input type="text" name="company" id="companyName" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-12 mt-4">
-                                    <div class="form-group">
-                                        <label for="description">What's on your mind?</label>
-                                        <textarea name="message" id="description" class="form-control" cols="30" rows="10"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="row pt-4">
-                                    <div class="col-sm-12 col-md-6">
-                                        <div class="form-group">
-                                            <label for="email">Email Address</label>
-                                            <input type="email" name="_replyto" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <button id="submit" type="submit" class="btn btn-success">Submit</button>
-                                </div>
-                            </div>
-                        </form> 
+                        </div>
                     </div>
-                </div>
+                    <div class="row">
+                        <div class="col-sm-12 mt-4">
+                            <div class="form-group">
+                                <label for="description">What's on your mind?</label>
+                                <textarea name="message" id="description" class="form-control" cols="30" rows="10" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-4">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" name="_replyto" id="email" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button id="submit" type="submit" name="submitForm" class="btn btn-success">Submit</button>
+                    </div>
+                </form> 
             </div>
         </section>
         
@@ -227,7 +208,6 @@
                 <div class="row">
                     <div class="col">
                         <a href="https://www.linkedin.com/in/kenny-pham-2a5740101" target="_blank"><i id="linkedin" class="fab fa-linkedin fa-2x"></i></a> 
-                        <a href="mailto:kennypm42@gmail.com" target="_blank"><i id="email" class="fas fa-envelope fa-2x"></i></a> 
                         <a href="https://github.com/kenchose" target="_blank"><i id="github" class="fab fa-github fa-2x"></i></a> 
                         <p class="h5 ml-5 pt-2 float-right text-light"><i class="far fa-copyright mr-3 foot"> 2020 Kenny Pham</i></p> 
                     </div>
@@ -253,48 +233,48 @@
                         <div id="carouselIndicators-admin" class="carousel slide carousel-fade" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="img-responsive" src="../static/img/projects/user_dashboard/admin-index.png" alt="first slide">
+                                    <img class="img-responsive" data-src="../static/img/projects/user_dashboard/admin-index.png" alt="first slide">
                                     <div class="caption-content">
                                         <p><h4>CRUD Application</h4></p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="img-responsive" src="../static/img/projects/user_dashboard/reg-validation.png" alt="second slide">
+                                    <img class="img-responsive" data-src="../static/img/projects/user_dashboard/reg-validation.png" alt="second slide">
                                     <div class="caption-content">
                                         <p><h4>Registration with validation error messages.</h4></p>
                                     </div>    
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="img-responsive" src="../static/img/projects/user_dashboard/signin-dashboard.png" alt="third slide">
+                                    <img class="img-responsive" data-src="../static/img/projects/user_dashboard/signin-dashboard.png" alt="third slide">
                                     <div class="caption-content">
                                         <p><h4>Already registered?</h4></p>
                                     </div>    
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="img-responsive" src="../static/img/projects/user_dashboard/admin-user-dashboard.png" alt="fifth slide">
+                                    <img class="img-responsive" data-src="../static/img/projects/user_dashboard/admin-user-dashboard.png" alt="fifth slide">
                                     <div class="caption-content">
                                         <p><h4>Admin Dashboard</h4></p>
                                     </div>    
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="img-responsive" src="../static/img/projects/user_dashboard/edit_2.png" alt="sixth slide">
+                                    <img class="img-responsive" data-src="../static/img/projects/user_dashboard/edit_2.png" alt="sixth slide">
                                     <div class="caption-content">
                                         <p><h4>Admin can edit, update, and select their level of authority.</h4></p>
                                     </div>    
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="img-responsive" src="../static/img/projects/user_dashboard/profile-dashboard.png" alt="seventh slide">
+                                    <img class="img-responsive" data-src="../static/img/projects/user_dashboard/profile-dashboard.png" alt="seventh slide">
                                     <div class="caption-content">
                                         <p><h4>Post and reply to messages on anyones profile.</h4></p>
                                     </div>    
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselIndicators-admin" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <i class="fas fa-arrow-left fa-2x carousel-control-icon"></i>
                                 <span class="sr-only">Previous</span>
                             </a>
                             <a class="carousel-control-next" href="#carouselIndicators-admin" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <i class="fas fa-arrow-right fa-2x carousel-control-icon"></i>
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
@@ -319,49 +299,49 @@
                         <div id="carouselIndicators-belp" class="carousel slide carousel-fade" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="img-responsive" src="../static/img/projects/user_review/reg-img.png" alt="first slide">
+                                    <img class="img-responsive" data-src="../static/img/projects/user_review/reg-img.png" alt="first slide">
                                     <div class="caption-content">
                                         <p><h4>Come and join our book club!!!</h4></p>
                                         <p>A web application where you can share with others your most and least favorite books.</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="img-responsive" src="../static/img/projects/user_review/homepage-book.png" alt="second slide">
+                                    <img class="img-responsive" data-src="../static/img/projects/user_review/homepage-book.png" alt="second slide">
                                     <div class="caption-content">
                                         <p><h4>Welcom to Belp!</h4></p>
                                         <p>Check your profile, make reviews, or logout.</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="img-responsive " src="../static/img/projects/user_review/recent-books.png" alt="third slide">
+                                    <img class="img-responsive " data-src="../static/img/projects/user_review/recent-books.png" alt="third slide">
                                     <div class="caption-content">
                                         <p><h4>Reviews</h4></p>
                                         <p>Read reviews from other people.</p>
                                     </div>    
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="img-responsive" src="../static/img/projects/user_review/review-book.png" alt="fourth slide">
+                                    <img class="img-responsive" data-src="../static/img/projects/user_review/review-book.png" alt="fourth slide">
                                     <div class="caption-content">
                                         <p><h4>Write Reviews</h4></p>
                                         <p>Add a review if you've already read the book.</p>
                                     </div>    
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="img-responsive" src="../static/img/projects/user_review/new-review.png" alt="fifth slide">
+                                    <img class="img-responsive" data-src="../static/img/projects/user_review/new-review.png" alt="fifth slide">
                                     <div class="caption-content">
                                         <p><h4>New Book</h4></p>
                                         <p>Write a review on your recent book you've finished and tell people what you think.</p>
                                     </div>    
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="img-responsive" src="../static/img/projects/user_review/profile.png" alt="sixth slide">
+                                    <img class="img-responsive" data-src="../static/img/projects/user_review/profile.png" alt="sixth slide">
                                     <div class="caption-content">
                                         <p><h4>Your Profile</h4></p>
                                         <p>Open up your profile to see what books you've already wrote a review about.</p>
                                     </div>    
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="img-responsive" src="../static/img/projects/user_review/edit-profile.png" alt="seventh slide">
+                                    <img class="img-responsive" data-src="../static/img/projects/user_review/edit-profile.png" alt="seventh slide">
                                     <div class="caption-content">
                                         <p><h4>Edit profile</h4></p>
                                         <p>You can also edit your profile.</p>
@@ -369,11 +349,11 @@
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselIndicators-belp" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <i class="fas fa-arrow-left fa-2x carousel-control-icon"></i>
                                 <span class="sr-only">Previous</span>
                             </a>
                             <a class="carousel-control-next" href="#carouselIndicators-belp" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <i class="fas fa-arrow-right fa-2x carousel-control-icon"></i>
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
@@ -399,35 +379,35 @@
                         <div id="carouselIndicators-hoppier" class="carousel slide carousel-fade" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100 " src="../static/img/projects/user_event/event-welcome.png" alt="First slide">
+                                    <img class="d-block w-100 " data-src="../static/img/projects/user_event/event-welcome.png" alt="First slide">
                                     <div class="caption-content">
                                         <p><h4>Sign up to see exciting events that are happening around the country</h4></p>
                                         <p>Add the next event to your itinerary and make it memorable.</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100 " src="../static/img/projects/user_event/event-dashboard.png" alt="Second slide">
+                                    <img class="d-block w-100 " data-src="../static/img/projects/user_event/event-dashboard.png" alt="Second slide">
                                     <div class="caption-content">
                                         <p><h4>Event Dashboard</h4></p>
                                         <p>Join events within or out of state and see how many people are going.</p>
                                     </div>    
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="../static/img/projects/user_event/event-create.png" alt="Third slide">
+                                    <img class="d-block w-100" data-src="../static/img/projects/user_event/event-create.png" alt="Third slide">
                                     <div class="caption-content">
                                         <p><h4>Create an event</h4></p>
                                         <p>Create or post an upcoming event to let people know the more the merrier.</p>
                                     </div>    
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="../static/img/projects/user_event/event-edit.png" alt="fourth slide">
+                                    <img class="d-block w-100" data-src="../static/img/projects/user_event/event-edit.png" alt="fourth slide">
                                     <div class="caption-content">
                                         <p><h4>Edit your event</h4></p>
                                         <p>Make an edit to your event.</p>
                                     </div>    
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="../static/img/projects/user_event/event-detail.png" alt="fifth slide">
+                                    <img class="d-block w-100" data-src="../static/img/projects/user_event/event-detail.png" alt="fifth slide">
                                     <div class="caption-content">
                                         <p><h4>Event Details</h4></p>
                                         <p>Read and join the message board and see who are attending.</p>
@@ -435,11 +415,11 @@
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselIndicators-hoppier" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <i class="fas fa-arrow-left fa-2x carousel-control-icon"></i>
                                 <span class="sr-only">Previous</span>
                             </a>
                             <a class="carousel-control-next" href="#carouselIndicators-hoppier" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <i class="fas fa-arrow-right fa-2x carousel-control-icon"></i>
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
@@ -465,42 +445,42 @@
                         <div id="carouselIndicators-tickets" class="carousel slide carousel-fade" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100 " src="../static/img/projects/tickets/main.png" alt="First slide">
+                                    <img class="d-block w-100 " data-src="../static/img/projects/tickets/main.png" alt="First slide">
                                     <div class="caption-content">
                                         <p class="tickets-p">Delete, edit, or check off a task when you're done.</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="../static/img/projects/tickets/tickets-form.png" alt="Second slide">
+                                    <img class="d-block w-100" data-src="../static/img/projects/tickets/tickets-form.png" alt="Second slide">
                                     <div class="caption-content">
                                         <p class="tickets-p">Give each task a title, notes, a due date, and mark its priority level.</p>
                                     </div>    
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100 " src="../static/img/projects/tickets/calendar.png" alt="Third slide">
+                                    <img class="d-block w-100 " data-src="../static/img/projects/tickets/calendar.png" alt="Third slide">
                                     <div class="caption-content">
                                         <p class="tickets-p">Easy calendar picker to schedule the due date.</p>
                                     </div>    
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="../static/img/projects/tickets/validation.png" alt="Fourth slide">
+                                    <img class="d-block w-100" data-src="../static/img/projects/tickets/validation.png" alt="Fourth slide">
                                     <div class="caption-content">
                                         <p class="tickets-p">Validations are added to prevent any mistakes.</p>
                                     </div>    
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="../static/img/projects/tickets/side-nav.png" alt="Fifth slide">
+                                    <img class="d-block w-100" data-src="../static/img/projects/tickets/side-nav.png" alt="Fifth slide">
                                     <div class="caption-content">
                                         <p class="tickets-p">Task, important, and automatic update counter of tasks due today for better organization.</p>
                                     </div>    
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselIndicators-tickets" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <i class="fas fa-arrow-left fa-2x carousel-control-icon"></i>
                                 <span class="sr-only">Previous</span>
                             </a>
                             <a class="carousel-control-next" href="#carouselIndicators-tickets" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <i class="fas fa-arrow-right fa-2x carousel-control-icon"></i>
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
@@ -527,60 +507,60 @@
                         <div id="carouselIndicators-cartify" class="carousel slide carousel-fade" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100 " src="../static/img/projects/cartify/landing-page1.png" alt="First slide">
+                                    <img class="d-block w-100 " data-src="../static/img/projects/cartify/landing-page1.png" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="../static/img/projects/cartify/landing-page2.png" alt="Second slide">
+                                    <img class="d-block w-100" data-src="../static/img/projects/cartify/landing-page2.png" alt="Second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100 " src="../static/img/projects/cartify/login.png" alt="Third slide">
+                                    <img class="d-block w-100 " data-src="../static/img/projects/cartify/login.png" alt="Third slide">
                                     <div class="caption-content">
                                         <p class="cartify-p">Login to your Cartify account or via social media.</p>
                                     </div>    
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100 " src="../static/img/projects/cartify/store-location.png" alt="4th slide">
+                                    <img class="d-block w-100 " data-src="../static/img/projects/cartify/store-location.png" alt="4th slide">
                                     <div class="caption-content">
                                         <p class="cartify-p">Visit any store located in Southern California.</p>
                                     </div>    
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100 responsive" src="../static/img/projects/cartify/responsive1.png" alt="5th slide">
+                                    <img class="d-block w-100 responsive" data-src="../static/img/projects/cartify/responsive1.png" alt="5th slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="../static/img/projects/cartify/add-item.png" alt="6th slide">
+                                    <img class="d-block w-100" data-src="../static/img/projects/cartify/add-item.png" alt="6th slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="../static/img/projects/cartify/cart.png" alt="7th slide">
+                                    <img class="d-block w-100" data-src="../static/img/projects/cartify/cart.png" alt="7th slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100 responsive" src="../static/img/projects/cartify/responsive2.png" alt="8th slide">
+                                    <img class="d-block w-100 responsive" data-src="../static/img/projects/cartify/responsive2.png" alt="8th slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="../static/img/projects/cartify/checkout.png" alt="9th slide">
+                                    <img class="d-block w-100" data-src="../static/img/projects/cartify/checkout.png" alt="9th slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="../static/img/projects/cartify/stripe.png" alt="10th slide">
+                                    <img class="d-block w-100" data-src="../static/img/projects/cartify/stripe.png" alt="10th slide">
                                     <div class="caption-content">
                                         <p class="cartify-p">Checkout with Stripe integration.</p>
                                     </div>    
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="../static/img/projects/cartify/purchase-history1.png" alt="11th slide">
+                                    <img class="d-block w-100" data-src="../static/img/projects/cartify/purchase-history1.png" alt="11th slide">
                                     <div class="caption-content">
                                         <p class="cartify-p">Search your purchase history.</p>
                                     </div>    
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" src="../static/img/projects/cartify/purchase-success.png" alt="12th slide">
+                                    <img class="d-block w-100" data-src="../static/img/projects/cartify/purchase-success.png" alt="12th slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselIndicators-cartify" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <i class="fas fa-arrow-left fa-2x carousel-control-icon"></i>
                                 <span class="sr-only">Previous</span>
                             </a>
                             <a class="carousel-control-next" href="#carouselIndicators-cartify" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <i class="fas fa-arrow-right fa-2x carousel-control-icon"></i>
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
@@ -591,6 +571,8 @@
         
         <script type="text/javascript" src="static/js/main.js"></script> 
         <script type="text/javascript" src="static/js/intersection-observer.js"></script>
+        <script type="text/javascript" src="static/js/lazy-load.js"></script>
+        <script type="text/javascript" src="static/js/nav.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <!--BOOTSTRAP -->  
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
     </body>
