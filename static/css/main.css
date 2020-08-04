@@ -53,8 +53,8 @@
 
 @media (max-width: 992px) {
   .slide-up {
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
+    -webkit-transform: translateY(12%);
+            transform: translateY(12%);
   }
 }
 
