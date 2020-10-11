@@ -14,6 +14,7 @@ const heroOptions = {
 
 const heroObserver = new IntersectionObserver((entries, heroObserver) => {
     entries.forEach(entry => {
+        // isIntersecting is true when the page is within view
         if (!entry.isIntersecting) {
             navbar.classList.add("nav-scrolled");
             navbar.classList.remove("nav-scroll");

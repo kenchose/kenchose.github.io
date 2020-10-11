@@ -127,7 +127,6 @@ nav .nav-links {
 nav .nav-links li {
   position: relative;
   list-style: none;
-  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -141,7 +140,7 @@ nav .nav-links li.fade {
 
 nav .nav-links a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 3px;
   color: #f46036;
   -ms-flex-pack: distribute;
